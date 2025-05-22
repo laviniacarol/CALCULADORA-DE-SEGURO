@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'simple';
+    src: url('simpleFont.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: inter;
+    src: url(/fonts/Inter-SemiBold.woff);
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    color: #263238;
+
+}
+
+header {
+    width: 100%;
+    font-family: inter; 
+    padding: 0.5rem;
+    margin-bottom: -2%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+header h1 {
+    top: -4px;
+    position: relative;
+    font-size: 27px;
+
+}
+header img {
+    height: 80px;
+}
+
+.nav {
+    display: flex;
+    padding-left: 900px;
+    gap: 60px;
+    font-size: 25px;
+}
+
+
+.intro {
+    background-color: #f5f7fa;
+    font-family: inter;
+    margin-top: 2%;
+    letter-spacing: 3px;
+    padding-top: 8%;
+    padding-left: 5%;
+    display: flex;
+}
+
+.intro h1, h3 {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    line-height: 1.1;
+}
+.intro h1 {
+    font-size: 90px;
+}
+
+.intro h3 {
+    font-size: 40px;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+.intro img {
+    height: 50rem;
+    margin-top: -160px;
+}
+
+
+.domestico {
+    display: flex;
+    font-family: inter;
+    padding-top: 3%;
+}
+
+.domestico img {
+    height: 30rem;
+}
+
+.dom-text h1 {
+    padding-left: 5.5%; 
+}
+
+.dom-text ul {
+    padding-left: 6%;
+    font-size: 25px;
+    width: 50%;
+}
+
+.dom-text span {
+    color: rgb(17, 17, 209);
+}
