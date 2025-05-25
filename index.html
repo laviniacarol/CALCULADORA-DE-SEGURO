@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    <title>CALCULADORA DE SEGURO</title>
 </head>
 <header>
@@ -32,21 +33,63 @@
 </div>
 
 <div class="domestico">
- <div class="dom-text">
- <h1>TRABALHADOR DOMÉSTICO</h1>
- <ul>
-    <li>TODO TRABALHADOR DOMÉSTICO QUE SOLICITAR O SEGURO TEM DIREITO À <span> 3 PARCELAS NO VALOR
-        DE 1 SALÁRIO MÍNIMO</span></li>
-    <br><li>É CONSIDERADO TRABALHADOR DOMÉSTICO TODO AQUELE QUE É CONTRATO PELO CPF DO EMPREGADOR.</li>
-    <br><li>PARA SOLICITAR O SEGURO O MESMO DEVE TER TRABALHADO 15 MESES NOS ÚLTIMOS 36 MESES.</li>
- </ul>
-</div>
-<div id="image-dom">
-  <img src="/assets/images/home.png">
-</div>
+    <div class="dom-text">
+      <h1>TRABALHADOR<br>DOMÉSTICO</h1>
+      <ul>
+        <li><i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i>
+          Todo trabalhador doméstico que solicitar o seguro tem direito à 
+          <span>3 PARCELAS NO VALOR DE 1 SALÁRIO MÍNIMO.</span>
+        </li>
+        <br>
+        <li><i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i>
+          É considerado trabalhador doméstico todo aquele que é contratado pelo CPF do empregador.
+        </li>
+        <br>
+        <li><i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i>
+          Para solicitar o seguro, o mesmo deve ter trabalhado 15 meses nos últimos 36 meses.
+        </li>
+      </ul>
+    </div>
+    <div id="image-dom">
+      <img src="/assets/images/casa.png" 
+    </div>
+  </div>
 </div>
 
+  <div class="form">
+   <form>
+    <h2>PREENCHA CORRETAMENTE</h2>
+    <label>Salários recebidos</label>
+     <input type="number" placeholder="ÚLTIMO" required>
+     <input type="number" placeholder="PENÚLTIMO" required>
+     <input type="number" placeholder="ANTEPENÚLTIMO" required>
 
+    <label>Data de entrada na empresa</label>
+     <input type="date" placeholder="DATA DE ENTRADA NA EMPRESA">
+
+    <label>Data de saída da empresa</label>
+     <input type="date" placeholder="DATA DE SAÍDA NA EMPRESA">
+
+    <label>Vezes em que já recebeu o seguro</label>
+    <select name="Vezes" required>
+     <option value="1">NENHUMA VEZ</option>
+     <option value="1">SEGUNDA VEZ</option>
+     <option value="1">TERCEIRA VEZ</option>
+
+
+    </select>
+
+     <label class="checkbox">
+      <input type="checkbox" name="indenizado"> Indenizado
+     </label>
+
+
+
+     <button type="button" onclick="calcularSeguro()">Calcular Seguro</button>
+     <div id="resultado"></div>
+   </form>
+  </div>
+  
 
     <script src="logic.js"></script>
 
