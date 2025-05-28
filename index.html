@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
    <title>CALCULADORA DE SEGURO</title>
 </head>
@@ -12,9 +13,9 @@
     <h1><b>SD Calc</h1>
 
     <div class="nav">
-        <p>Leis</p>
-        <p>Calculadora</p>
-        <p>Solicitar em Casa</p>
+      <p><a href="#domestico">Seguro Doméstico</a></p>
+      <p><a href="#calculadora">Calculadora</a></p>
+      <p><a href="#seguro-casa">Solicitar em Casa</a></p>
     </div>
 </header>
 
@@ -32,6 +33,7 @@
     </div>
 </div>
 
+<div id="domestico">
 <div class="domestico">
     <div class="dom-text">
       <h1>TRABALHADOR<br>DOMÉSTICO</h1>
@@ -55,41 +57,89 @@
     </div>
   </div>
 </div>
+</div>
 
-  <div class="form">
-   <form>
+
+<div id="calculadora">
+<div class="form">
+  <form id="seguro-form">
     <h2>PREENCHA CORRETAMENTE</h2>
-    <label>Salários recebidos</label>
-     <input type="number" placeholder="ÚLTIMO" required>
-     <input type="number" placeholder="PENÚLTIMO" required>
-     <input type="number" placeholder="ANTEPENÚLTIMO" required>
+
+    <label> Últimos salários recebidos</label>
+    <input type="number" name="salario1" placeholder="ÚLTIMO" required>
+    <input type="number" name="salario2" placeholder="PENÚLTIMO" required>
+    <input type="number" name="salario3" placeholder="ANTEPENÚLTIMO" required>
 
     <label>Data de entrada na empresa</label>
-     <input type="date" placeholder="DATA DE ENTRADA NA EMPRESA">
+    <input type="date" name="entrada" placeholder="DATA DE ENTRADA NA EMPRESA" required>
 
     <label>Data de saída da empresa</label>
-     <input type="date" placeholder="DATA DE SAÍDA NA EMPRESA">
+    <input type="date" name="saida" placeholder="DATA DE SAÍDA NA EMPRESA" required>
+
+    <label>Tempo trabalhado em outra empresa nos últimos 18 meses</label>
+    <input type="number" name="outros_meses" min="0" max="18" value="0" required>
 
     <label>Vezes em que já recebeu o seguro</label>
-    <select name="Vezes" required>
-     <option value="1">NENHUMA VEZ</option>
-     <option value="1">SEGUNDA VEZ</option>
-     <option value="1">TERCEIRA VEZ</option>
-
-
+    <select name="vezes" required>
+      <option value="1">PRIMEIRA VEZ</option>
+      <option value="2">SEGUNDA VEZ</option>
+      <option value="3">TERCEIRA VEZ</option>
     </select>
 
-     <label class="checkbox">
+    <label class="checkbox">
       <input type="checkbox" name="indenizado"> Indenizado
-     </label>
+    </label>
+
+    <button type="submit">Calcular Seguro</button>
+    <i class='bx bx-chevron-down' style='color:#000000; font-size: 45px;'></i>
+  </form>
+
+  <div id="resultado" style="margin-top: 20px;"></div>
+</div>
+</div>
+
+<div id="seguro-casa">
+<div class="seguro-casa">
+<h2>Agora é possível solicitar o Seguro-Desemprego</h2>
+<h1>EM CASA</h1>
+<p>Isso mesmo! Agora é possível solicitar o seguro-desempre em casa!<br>
+Basta baixar o app Carteira de Trabalho Digital e fazer login usando seu acesso do gov.</p>
+<div class="video-container">
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/hgzp4dvSrB4?si=iY8dr-trvVsQlsl5" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+  </iframe>
+</div>
+</div>
+</div>
 
 
 
-     <button type="button" onclick="calcularSeguro()">Calcular Seguro</button>
-     <div id="resultado"></div>
-   </form>
-  </div>
+
+
   
+<div class="sine">
+  <div class="sine-content">
+<div id="sine-worker">
+  <img src="/assets/images/worker.png" alt="trabalhador de escritório">
+</div>
+<div class="sine-text">
+<ul>
+  <p id="main-title">PARA MAIORES ORIENTAÇÕES,<br> ENTRE EM CONTATO COM O SINE MAIS PŔOXIMO.</p>
+  <p>ATRAVÉS DELE VOCÊ PODE:</p>
+  <li><i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i> SOLICITAR SEGURO-DESEMPREGO.</li>
+  <li><i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i> ENCONTRAR VAGAS DE EMPREGO.</li>
+  <li><i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i> CORRIGIR DIVIRGÊNCIAS DE DADOS.</li>
+  <li><i class="fa-solid fa-circle-check" style="color: #63E6BE;"></i> ESCLARECER DÚVIDAS.</li>
+  <p>*Portando sempre um documento pessoal com foto e CPF.</p>
+</ul>
+<div>
+</div>
+</div>
 
     <script src="logic.js"></script>
 

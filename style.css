@@ -137,6 +137,7 @@ form {
 form label {
     margin-bottom: 1%;
     font-size: 18px;
+    text-align: center;
 }
 
 input[type='number'] {
@@ -170,3 +171,86 @@ button {
 button :hover {
     color: rgb(106, 180, 122);
 }
+
+
+#resultado {
+     text-align: center;
+     font-family: inter;
+     background: #f0f0f0; 
+     color: rgb(106, 180, 122);
+     font-size: 22px;
+     padding: 15px; 
+     border-radius: 5px; 
+     border-radius: 25px;
+     max-width: 500px;
+     margin: 40px auto;
+    }
+
+
+
+.seguro-casa {
+    font-family: inter;
+    background-color: #f5f7fa;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.seguro-casa h1,h2 {
+    line-height: 40%;
+}
+
+.seguro-casa h2 {
+    font-size: 28px;
+}
+
+.seguro-casa h1 {
+    font-size: 45px;
+}
+
+.seguro-casa p {
+    font-size: 23px;
+}
+
+.sine-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    }
+      
+#sine-worker img {
+    height: 45rem;
+      }
+    
+.sine-text {
+    font-family: inter;
+    margin-top: 10%;
+    font-size: 25px;
+    margin-top: 4%;
+    margin-left: -5%;
+}
+
+#main-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.sine-text ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  
+  a:hover {
+    opacity: 0.8; 
+  }
+
+  
