@@ -24,7 +24,6 @@ O projeto foi desenvolvido com foco em **usabilidade e acessibilidade**, especia
 1. Clone o repositório:
    ```bash
    git clone https://github.com/laviniacarol/CALCULADORA-DE-SEGURO.git
-<br>
 Segue em anexo as fotos do projeto.
 ![1](https://github.com/user-attachments/assets/067af9a0-4444-4907-941f-45949916d457)
 ![2](https://github.com/user-attachments/assets/ad550199-f0ac-4fc2-a656-316548f062b8)
